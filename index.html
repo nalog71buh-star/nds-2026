@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>НалогЭксперт — НДС общепит 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:#111;font-family:'PT Sans',sans-serif;color:#f0f0f0;padding:0 0 48px}
+.page{max-width:600px;margin:0 auto}
+
+.header{background:#cc1f1f;padding:32px 28px 26px;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;right:-30px;top:-30px;width:160px;height:160px;border-radius:50%;border:2px solid rgba(255,255,255,0.1)}
+.header::after{content:'';position:absolute;right:30px;top:30px;width:80px;height:80px;border-radius:50%;border:2px solid rgba(255,255,255,0.1)}
+.brand{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:3.5px;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:12px}
+.header h1{font-family:'Oswald',sans-serif;font-size:30px;font-weight:700;line-height:1.15;color:#fff;margin-bottom:10px;position:relative;z-index:1}
+.header-sub{font-size:14px;color:rgba(255,255,255,0.82);line-height:1.5;position:relative;z-index:1}
+
+.alert{background:#1c1c1c;border-left:4px solid #cc1f1f;padding:16px 20px;margin:20px 20px 0;border-radius:0 6px 6px 0}
+.alert p{font-size:13px;color:#aaa;line-height:1.6}
+.alert strong{color:#fff}
+
+.section{padding:24px 20px 6px}
+.section-label{font-family:'Oswald',sans-serif;font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#cc1f1f;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.section-label::after{content:'';flex:1;height:1px;background:#272727}
+
+.item{display:flex;align-items:flex-start;gap:14px;padding:16px 18px;margin-bottom:8px;background:#1a1a1a;border-radius:8px;border:1px solid #242424}
+.num{width:28px;height:28px;border-radius:50%;background:#cc1f1f;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-size:13px;font-weight:700;color:#fff;margin-top:1px}
+.item-body{}
+.item-title{font-size:14px;font-weight:700;color:#f0f0f0;line-height:1.35;margin-bottom:4px}
+.item-desc{font-size:12px;color:#777;line-height:1.5}
+.tag{display:inline-block;background:#cc1f1f22;color:#cc1f1f;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:2px 7px;border-radius:3px;margin-bottom:5px}
+
+.check-box{margin:6px 0 0 0;width:22px;height:22px;border-radius:50%;border:2px solid #333;flex-shrink:0}
+
+.dates{margin:6px 20px 0;background:#1a1a1a;border-radius:8px;border:1px solid #242424;overflow:hidden}
+.date-row{display:flex;align-items:center;padding:14px 18px;gap:14px;border-bottom:1px solid #222}
+.date-row:last-child{border-bottom:none}
+.dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.dot-r{background:#cc1f1f}
+.dot-g{background:#3a9e5f}
+.dot-y{background:#e8a020}
+.date-info{flex:1}
+.date-info strong{font-family:'Oswald',sans-serif;font-size:14px;font-weight:600;color:#e0e0e0;display:block;margin-bottom:2px}
+.date-info span{font-size:12px;color:#666}
+.badge{font-family:'Oswald',sans-serif;font-size:11px;font-weight:600;padding:4px 10px;border-radius:4px;letter-spacing:0.5px;white-space:nowrap}
+.b-r{background:#cc1f1f22;color:#cc1f1f}
+.b-g{background:#3a9e5f22;color:#3a9e5f}
+.b-y{background:#e8a02022;color:#e8a020}
+
+.verdict{margin:20px 20px 0;background:#1a1a1a;border:1px solid #333;border-radius:10px;padding:20px}
+.verdict-title{font-family:'Oswald',sans-serif;font-size:13px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#888;margin-bottom:14px}
+.verdict-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #1e1e1e}
+.verdict-row:last-child{border-bottom:none}
+.v-mark{font-size:16px;flex-shrink:0;width:22px;text-align:center}
+.v-text{font-size:13px;color:#ccc;line-height:1.4}
+
+.footer{margin:24px 20px 0;background:#cc1f1f;border-radius:10px;padding:22px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.footer-left p{font-family:'Oswald',sans-serif;font-size:16px;font-weight:600;color:#fff;line-height:1.3}
+.footer-left small{font-size:12px;color:rgba(255,255,255,0.7);display:block;margin-top:4px}
+.footer-btn{background:#fff;color:#cc1f1f;font-family:'Oswald',sans-serif;font-size:13px;font-weight:700;padding:12px 18px;border-radius:7px;text-decoration:none;white-space:nowrap;letter-spacing:0.5px}
+
+.bottom{text-align:center;padding:24px 20px 0}
+.bottom span{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:#3a3a3a}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="header">
+  <div class="brand">НалогЭксперт · Тула</div>
+  <h1>НДС для общепита:<br>льгота с 01.04.2026</h1>
+  <div class="header-sub">Проверьте по чек-листу, можете ли вы<br>не платить НДС до конца 2026 года</div>
+</div>
+
+<div class="alert">
+  <p>С 1 апреля 2026 года малый общепит на <strong>УСН или ПСН</strong>, ставший плательщиком НДС только в 2026 году, может получить <strong>временное освобождение от НДС</strong> до 31 декабря 2026 года. Без подачи заявления — автоматически при соблюдении условий.</p>
+</div>
+
+<!-- БЛОК 1 -->
+<div class="section">
+  <div class="section-label">Блок 1 — Вид деятельности и режим</div>
+
+  <div class="item">
+    <div class="num">1</div>
+    <div class="item-body">
+      <div class="tag">ОКВЭД 56</div>
+      <div class="item-title">Деятельность — общественное питание</div>
+      <div class="item-desc">Кафе, ресторан, столовая, бар, фудкорт или доставка из объекта общепита. Не просто розничная торговля едой — важна именно услуга питания</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="num">2</div>
+    <div class="item-body">
+      <div class="item-title">В 2026 году вы на УСН или ПСН</div>
+      <div class="item-desc">Не ОСНО и не другие режимы. ПСН — только для ИП</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="num">3</div>
+    <div class="item-body">
+      <div class="item-title">Плательщиком НДС стали только с 01.01.2026</div>
+      <div class="item-desc">До 31.12.2025 — не платили НДС или пользовались освобождением. Если НДС платили до 2026 года — льгота с апреля не применяется</div>
+    </div>
+  </div>
+</div>
+
+<!-- БЛОК 2 -->
+<div class="section">
+  <div class="section-label">Блок 2 — Доходы за 2025 год</div>
+
+  <div class="item">
+    <div class="num">4</div>
+    <div class="item-body">
+      <div class="item-title">Доход за весь 2025 год — не более 60 млн ₽</div>
+      <div class="item-desc">По данным налогового учёта за 2025 год по вашему режиму налогообложения</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="num">5</div>
+    <div class="item-body">
+      <div class="item-title">Доля выручки от общепита — не менее 70%</div>
+      <div class="item-desc">Формула: выручка от общепита ÷ общий доход 2025 × 100% ≥ 70%. Считаем питание, блюда и напитки в объектах, доставку из них</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="num">6</div>
+    <div class="item-body">
+      <div class="tag">Только ИП на УСН</div>
+      <div class="item-title">Превысили 20 млн только за счёт процентов по вкладам</div>
+      <div class="item-desc">Проценты по банковским вкладам и остаткам не лишают льготы, если общий доход всё равно не превышает 60 млн ₽</div>
+    </div>
+  </div>
+</div>
+
+<!-- БЛОК 3 -->
+<div class="section">
+  <div class="section-label">Блок 3 — Учёт и ККТ</div>
+
+  <div class="item">
+    <div class="num">7</div>
+    <div class="item-body">
+      <div class="item-title">ККТ перепрограммирована с 01.04.2026</div>
+      <div class="item-desc">Чеки по услугам общепита пробиваются без НДС. Если с 1 апреля уже пробивали с НДС — оформите корректирующие чеки на ту же сумму без НДС</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="num">8</div>
+    <div class="item-body">
+      <div class="item-title">В декларации по НДС операции общепита — как освобождённые</div>
+      <div class="item-desc">С кодом льготы за период 01.04–31.12.2026. Прочие операции (не общепит) декларируются в обычном порядке</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="num">9</div>
+    <div class="item-body">
+      <div class="item-title">Знаете, что будет с 01.01.2027</div>
+      <div class="item-desc">Временная льгота заканчивается. Либо переходите на стандартную льготу по ст. 149 НК РФ (если соответствуете критериям), либо платите НДС на общих основаниях</div>
+    </div>
+  </div>
+</div>
+
+<!-- ДАТЫ -->
+<div class="section">
+  <div class="section-label">Ключевые даты</div>
+</div>
+<div class="dates">
+  <div class="date-row">
+    <div class="dot dot-r"></div>
+    <div class="date-info">
+      <strong>01.01.2026 — 31.03.2026</strong>
+      <span>НДС начисляется в общем порядке</span>
+    </div>
+    <span class="badge b-r">НДС есть</span>
+  </div>
+  <div class="date-row">
+    <div class="dot dot-g"></div>
+    <div class="date-info">
+      <strong>01.04.2026 — 31.12.2026</strong>
+      <span>Льготный период — НДС по общепиту нет</span>
+    </div>
+    <span class="badge b-g">Льгота</span>
+  </div>
+  <div class="date-row">
+    <div class="dot dot-y"></div>
+    <div class="date-info">
+      <strong>с 01.01.2027</strong>
+      <span>Временная льгота заканчивается</span>
+    </div>
+    <span class="badge b-y">Проверить</span>
+  </div>
+</div>
+
+<!-- ИТОГ -->
+<div class="section">
+  <div class="section-label">Итоговая проверка</div>
+</div>
+<div class="verdict">
+  <div class="verdict-title">Если на все 9 пунктов — ДА:</div>
+  <div class="verdict-row">
+    <div class="v-mark">✅</div>
+    <div class="v-text">Вы вправе не платить НДС с услуг общепита с 01.04 по 31.12.2026</div>
+  </div>
+  <div class="verdict-row">
+    <div class="v-mark">✅</div>
+    <div class="v-text">Отдельное заявление в ФНС подавать не нужно — льгота применяется автоматически</div>
+  </div>
+  <div class="verdict-row">
+    <div class="v-mark">✅</div>
+    <div class="v-text">Настройте ККТ с 1 апреля и отразите операции в декларации с кодом льготы</div>
+  </div>
+  <div class="verdict-row">
+    <div class="v-mark">⚠️</div>
+    <div class="v-text">Если хотя бы один пункт — НЕТ, льгота не применяется. Обратитесь за консультацией</div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-left">
+    <p>Не уверены<br>в своей ситуации?</p>
+    <small>nalogiminimum.ru</small>
+  </div>
+  <a class="footer-btn" href="https://nalogiminimum.ru">Консультация →</a>
+</div>
+
+<div class="bottom">
+  <span>НалогЭксперт · nalogiminimum.ru · Тула</span>
+</div>
+
+</div>
+</body>
+</html>
