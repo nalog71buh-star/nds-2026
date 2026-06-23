@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)file:///C:/Users/User/Downloads/ndfl_vychety_mobile_1.html -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="theme-color" content="#111111">
+<meta property="og:title" content="Налоговые вычеты по НДФЛ — чек-лист">
+<meta property="og:description" content="Как вернуть деньги от государства за лечение, обучение, квартиру и не только">
+<meta property="og:image" content="https://nalogi71.ru/og.jpg">
+<title>Вычеты по НДФЛ — НалогЭксперт</title>
+<link href="./Вычеты по НДФЛ — НалогЭксперт_files/css2" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:#111;font-family:'PT Sans',sans-serif;color:#f0f0f0;padding:0 0 56px;min-height:100vh}
+.page{max-width:480px;margin:0 auto}
+
+/* HEADER */
+.header{background:#cc1f1f;padding:28px 20px 24px;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;right:-24px;top:-24px;width:140px;height:140px;border-radius:50%;border:2px solid rgba(255,255,255,0.1)}
+.header::after{content:'';position:absolute;right:24px;top:24px;width:70px;height:70px;border-radius:50%;border:2px solid rgba(255,255,255,0.1)}
+.brand{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-bottom:10px}
+.header h1{font-family:'Oswald',sans-serif;font-size:26px;font-weight:700;line-height:1.2;color:#fff;margin-bottom:8px;position:relative;z-index:1}
+.header-sub{font-size:13px;color:rgba(255,255,255,0.8);line-height:1.5;position:relative;z-index:1}
+
+/* ALERT */
+.alert{background:#1c1c1c;border-left:4px solid #cc1f1f;padding:14px 16px;margin:16px 16px 0;border-radius:0 6px 6px 0}
+.alert p{font-size:13px;color:#999;line-height:1.6}
+.alert strong{color:#f0f0f0}
+
+/* SECTIONS */
+.section{padding:20px 16px 4px}
+.section-label{font-family:'Oswald',sans-serif;font-size:10px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#cc1f1f;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.section-label::after{content:'';flex:1;height:1px;background:#272727}
+
+/* STEP ITEMS */
+.item{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;margin-bottom:8px;background:#1a1a1a;border-radius:8px;border:1px solid #242424}
+.num{width:26px;height:26px;border-radius:50%;background:#cc1f1f;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-size:12px;font-weight:700;color:#fff;margin-top:1px}
+.num-warn{background:#242424;color:#cc1f1f;font-size:15px}
+.item-title{font-size:14px;font-weight:700;color:#f0f0f0;line-height:1.3;margin-bottom:3px}
+.item-desc{font-size:12px;color:#666;line-height:1.5}
+.tag{display:inline-block;background:#cc1f1f22;color:#cc1f1f;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:2px 6px;border-radius:3px;margin-bottom:4px}
+
+/* VYCHET CARDS */
+.vychet-card{margin:0 16px 8px;background:#1a1a1a;border-radius:8px;border:1px solid #242424;overflow:hidden}
+.vychet-head{display:flex;align-items:center;justify-content:space-between;padding:13px 16px;border-bottom:1px solid #1e1e1e;gap:10px}
+.vychet-name{font-family:'Oswald',sans-serif;font-size:14px;font-weight:600;color:#e0e0e0;line-height:1.3}
+.vychet-sum{font-family:'Oswald',sans-serif;font-size:17px;font-weight:700;color:#cc1f1f;white-space:nowrap;flex-shrink:0}
+.vychet-body{padding:10px 16px}
+.vychet-row{display:flex;align-items:baseline;gap:7px;font-size:12px;color:#666;line-height:1.6;margin-bottom:1px}
+.vychet-row:last-child{margin-bottom:0}
+.vr-dash{color:#333;flex-shrink:0}
+.vychet-docs{padding:9px 16px;background:#161616;border-top:1px solid #1e1e1e;font-size:11px;color:#4a4a4a;line-height:1.6}
+.vychet-docs strong{color:#777}
+
+/* HOW TO */
+.how-list{margin:0 16px 0}
+.how-row{display:flex;align-items:center;gap:12px;padding:13px 16px;margin-bottom:8px;background:#1a1a1a;border-radius:8px;border:1px solid #242424}
+.how-badge{font-family:'Oswald',sans-serif;font-size:10px;font-weight:700;padding:4px 9px;border-radius:4px;white-space:nowrap;flex-shrink:0;letter-spacing:0.5px}
+.b-g{background:#3a9e5f22;color:#3a9e5f}
+.b-y{background:#e8a02022;color:#e8a020}
+.b-r{background:#cc1f1f22;color:#cc1f1f}
+.how-info strong{font-family:'Oswald',sans-serif;font-size:13px;font-weight:600;color:#e0e0e0;display:block;margin-bottom:2px}
+.how-info span{font-size:12px;color:#555;line-height:1.4}
+
+/* VERDICT */
+.verdict{margin:4px 16px 0;background:#1a1a1a;border:1px solid #2a2a2a;border-radius:10px;padding:18px 16px}
+.verdict-title{font-family:'Oswald',sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#666;margin-bottom:12px}
+.verdict-row{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid #1e1e1e}
+.verdict-row:last-child{border-bottom:none;padding-bottom:0}
+.v-mark{font-size:15px;flex-shrink:0;width:20px;margin-top:1px}
+.v-text{font-size:13px;color:#bbb;line-height:1.4}
+
+/* FOOTER CTA */
+.footer{margin:20px 16px 0;background:#cc1f1f;border-radius:10px;padding:20px 18px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.footer-left p{font-family:'Oswald',sans-serif;font-size:15px;font-weight:600;color:#fff;line-height:1.3}
+.footer-left small{font-size:12px;color:rgba(255,255,255,0.65);display:block;margin-top:3px}
+.footer-btn{background:#fff;color:#cc1f1f;font-family:'Oswald',sans-serif;font-size:13px;font-weight:700;padding:11px 16px;border-radius:7px;text-decoration:none;white-space:nowrap;letter-spacing:0.5px;flex-shrink:0}
+
+/* BOTTOM */
+.bottom{text-align:center;padding:22px 16px 0}
+.bottom span{font-family:'Oswald',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#2e2e2e}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- HEADER -->
+<div class="header">
+  <div class="brand">НалогЭксперт · Чек-лист</div>
+  <h1>Вычеты по НДФЛ:<br>верни деньги<br>от государства</h1>
+  <div class="header-sub">Проверь по чек-листу — без бухгалтера, за 5 минут</div>
+</div>
+
+<!-- ALERT -->
+<div class="alert">
+  <p>Вычет дают только тем, кто платит <strong>НДФЛ 13% или 15%</strong>. Срок давности — <strong>3 года с момента расходов</strong>. В 2025 году можно вернуть за 2022–2024 гг.</p>
+</div>
+
+<!-- ШАГ 1 -->
+<div class="section">
+  <div class="section-label">Шаг 1 — Право на вычет</div>
+
+  <div class="item">
+    <div class="num">1</div>
+    <div class="item-body">
+      <div class="item-title">Ты налоговый резидент РФ</div>
+      <div class="item-desc">Живёшь в России больше 183 дней в году</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="num">2</div>
+    <div class="item-body">
+      <div class="item-title">Платишь НДФЛ 13% или 15%</div>
+      <div class="item-desc">С зарплаты, аренды или продажи имущества. Доход ИП на УСН и самозанятых — не считается</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="num">3</div>
+    <div class="item-body">
+      <div class="item-title">С расходов прошло не больше 3 лет</div>
+      <div class="item-desc">За более ранние периоды ФНС откажет</div>
+    </div>
+  </div>
+</div>
+
+<!-- ШАГ 2 -->
+<div class="section">
+  <div class="section-label">Шаг 2 — Выбери свой вычет</div>
+</div>
+
+<div class="vychet-card">
+  <div class="vychet-head">
+    <div class="vychet-name">За детей · Стандартный</div>
+    <div class="vychet-sum">до 12 000 ₽/мес</div>
+  </div>
+  <div class="vychet-body">
+    <div class="vychet-row"><span class="vr-dash">—</span><span>1-й и 2-й ребёнок — 1 400 ₽/мес каждый</span></div>
+    <div class="vychet-row"><span class="vr-dash">—</span><span>3-й и далее — 3 000 ₽/мес</span></div>
+    <div class="vychet-row"><span class="vr-dash">—</span><span>Ребёнок-инвалид — 12 000 ₽/мес</span></div>
+    <div class="vychet-row"><span class="vr-dash">—</span><span>Лимит дохода — 450 000 ₽/год</span></div>
+  </div>
+  <div class="vychet-docs"><strong>Нужно:</strong> свидетельство о рождении + заявление работодателю</div>
+</div>
+
+<div class="vychet-card">
+  <div class="vychet-head">
+    <div class="vychet-name">За лечение · Социальный</div>
+    <div class="vychet-sum">до 19 500 ₽</div>
+  </div>
+  <div class="vychet-body">
+    <div class="vychet-row"><span class="vr-dash">—</span><span>Лимит 150 000 ₽/год → возврат до 19 500 ₽</span></div>
+    <div class="vychet-row"><span class="vr-dash">—</span><span>Дорогостоящее лечение — без лимита</span></div>
+    <div class="vychet-row"><span class="vr-dash">—</span><span>За себя, супруга, детей до 18 лет, родителей</span></div>
+  </div>
+  <div class="vychet-docs"><strong>Нужно:</strong> договор + чеки + справка из клиники по форме ФНС</div>
+</div>
+
+<div class="vychet-card">
+  <div class="vychet-head">
+    <div class="vychet-name">За обучение · Социальный</div>
+    <div class="vychet-sum">до 19 500 ₽</div>
+  </div>
+  <div class="vychet-body">
+    <div class="vychet-row"><span class="vr-dash">—</span><span>За своё — лимит 150 000 ₽ → до 19 500 ₽</span></div>
+    <div class="vychet-row"><span class="vr-dash">—</span><span>За ребёнка — лимит 110 000 ₽ → до 14 300 ₽</span></div>
+    <div class="vychet-row"><span class="vr-dash">—</span><span>Студент и родитель получают каждый свой</span></div>
+  </div>
+  <div class="vychet-docs"><strong>Нужно:</strong> договор + чеки + справка об оплате по форме ФНС</div>
+</div>
+
+<div class="vychet-card">
+  <div class="vychet-head">
+    <div class="vychet-name">За квартиру · Имущественный</div>
+    <div class="vychet-sum">до 650 000 ₽</div>
+  </div>
+  <div class="vychet-body">
+    <div class="vychet-row"><span class="vr-dash">—</span><span>Покупка — лимит 2 млн ₽ → до 260 000 ₽</span></div>
+    <div class="vychet-row"><span class="vr-dash">—</span><span>Ипотека — лимит 3 млн ₽ → ещё до 390 000 ₽</span></div>
+    <div class="vychet-row"><span class="vr-dash">—</span><span>Супруги получают каждый — итого до 1 300 000 ₽</span></div>
+    <div class="vychet-row"><span class="vr-dash">—</span><span>Остаток переносится на следующие годы</span></div>
+  </div>
+  <div class="vychet-docs"><strong>Нужно:</strong> ДКП + выписка ЕГРН + платёжки + справка банка</div>
+</div>
+
+<div class="vychet-card">
+  <div class="vychet-head">
+    <div class="vychet-name">За фитнес · Социальный</div>
+    <div class="vychet-sum">до 19 500 ₽</div>
+  </div>
+  <div class="vychet-body">
+    <div class="vychet-row"><span class="vr-dash">—</span><span>Входит в общий лимит 150 000 ₽/год</span></div>
+    <div class="vychet-row"><span class="vr-dash">—</span><span>Только если клуб есть в реестре Минспорта</span></div>
+  </div>
+  <div class="vychet-docs"><strong>Нужно:</strong> договор + чеки + справка от фитнес-клуба</div>
+</div>
+
+<div class="vychet-card">
+  <div class="vychet-head">
+    <div class="vychet-name">За инвестиции · ИИС</div>
+    <div class="vychet-sum">до 52 000 ₽/год</div>
+  </div>
+  <div class="vychet-body">
+    <div class="vychet-row"><span class="vr-dash">—</span><span>Тип А — 13% от пополнения, max 52 000 ₽/год</span></div>
+    <div class="vychet-row"><span class="vr-dash">—</span><span>Тип Б — без налога с прибыли совсем</span></div>
+    <div class="vychet-row"><span class="vr-dash">—</span><span>Держать 3 года (старый) или 5 лет (новый)</span></div>
+  </div>
+  <div class="vychet-docs"><strong>Нужно:</strong> справка брокера об удержанном налоге + отчёт по счёту</div>
+</div>
+
+<!-- ШАГ 3 -->
+<div class="section">
+  <div class="section-label">Шаг 3 — Как подать</div>
+</div>
+
+<div class="how-list">
+  <div class="how-row">
+    <span class="how-badge b-g">Быстро</span>
+    <div class="how-info">
+      <strong>Через работодателя</strong>
+      <span>Получаешь вычет прямо в зарплате уже в этом году</span>
+    </div>
+  </div>
+  <div class="how-row">
+    <span class="how-badge b-y">Онлайн</span>
+    <div class="how-info">
+      <strong>Личный кабинет ФНС</strong>
+      <span>Подаёшь 3-НДФЛ онлайн — деньги на счёт за месяц</span>
+    </div>
+  </div>
+  <div class="how-row">
+    <span class="how-badge b-r">Авто</span>
+    <div class="how-info">
+      <strong>Упрощённый порядок</strong>
+      <span>Для имущественного и ИИС — ФНС присылает уведомление сама</span>
+    </div>
+  </div>
+</div>
+
+<!-- СТОП-ЛИСТ -->
+<div class="section">
+  <div class="section-label">Стоп-лист — когда откажут</div>
+
+  <div class="item">
+    <div class="num num-warn">✕</div>
+    <div class="item-body">
+      <div class="item-title">Квартира у близкого родственника</div>
+      <div class="item-desc">Родители, дети, братья, сёстры — взаимозависимые лица</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="num num-warn">✕</div>
+    <div class="item-body">
+      <div class="item-title">Использован материнский капитал</div>
+      <div class="item-desc">Вычет только на сумму сверх маткапитала</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="num num-warn">✕</div>
+    <div class="item-body">
+      <div class="item-title">Работаешь в серую</div>
+      <div class="item-desc">Нет официального НДФЛ — нет базы для возврата</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="num num-warn">✕</div>
+    <div class="item-body">
+      <div class="item-title">Родственник не из списка НК</div>
+      <div class="item-desc">Свёкор, тёща, двоюродный брат — вычет не положен</div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="num num-warn">✕</div>
+    <div class="item-body">
+      <div class="item-title">Прошло больше 3 лет</div>
+      <div class="item-desc">Расходы до 2022 года — срок истёк</div>
+    </div>
+  </div>
+</div>
+
+<!-- ИТОГ -->
+<div class="section">
+  <div class="section-label">Итог</div>
+</div>
+<div class="verdict">
+  <div class="verdict-title">Если все условия выполнены:</div>
+  <div class="verdict-row">
+    <div class="v-mark">✅</div>
+    <div class="v-text">Подаёшь на вычет и возвращаешь НДФЛ за последние 3 года</div>
+  </div>
+  <div class="verdict-row">
+    <div class="v-mark">✅</div>
+    <div class="v-text">Через ЛК ФНС — онлайн, деньги в течение месяца</div>
+  </div>
+  <div class="verdict-row">
+    <div class="v-mark">✅</div>
+    <div class="v-text">Имущественный и ИИС — в упрощённом порядке без 3-НДФЛ</div>
+  </div>
+  <div class="verdict-row">
+    <div class="v-mark">⚠️</div>
+    <div class="v-text">Смешанные расходы или нестандартная ситуация — нужна консультация</div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="footer">
+  <div class="footer-left">
+    <p>Не знаешь<br>с чего начать?</p>
+    <small>Разберу твою ситуацию лично</small>
+  </div>
+  <a class="footer-btn" href="https://instagram.com/YOUR_HANDLE">Написать →</a>
+</div>
+
+<div class="bottom">
+  <span>НалогЭксперт · Налоговая безопасность вашего бизнеса</span>
+</div>
+
+</div>
+
+
+</body></html>
